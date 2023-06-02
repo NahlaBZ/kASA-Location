@@ -1,0 +1,48 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 4% auto 2% auto;
+  max-width: 1600px;
+
+  @media screen and (max-width: 1800px) {
+    margin: 4% 10% 2% 10%;
+  }
+
+  .logo {
+    width: 20%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  nav {
+    ul {
+      @include verticalCenter;
+      height: 100%;
+
+      a {
+        margin-left: 20px;
+        font-size: 24px;
+        font-weight: 500;
+
+      }
+    }
+  }
+}
+
+.nav-active {
+  position: relative;
+
+  &::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: $color-1;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
