@@ -2,10 +2,14 @@ import React from "react";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 
+
+
+
 const About = () => {
   return (
     <div>
-      <Banner class="backabout" />
+
+      <Banner class="Backabout" />
       <Collapse title="Fiabilité">
         Les annonces postées sur Kasa garantissent une fiabilité totale. Les
         photos sont conformes aux logements, et toutes les informations sont

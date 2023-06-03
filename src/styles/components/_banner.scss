@@ -1,18 +1,21 @@
 .headerImg {
   max-width: 1600px;
   margin: 0 auto;
+  position: relative;
+
 
 
   .backhome {
-    background: $bg-img-home;
-  }
-
-  .backabout {
     background: $bg-img-about;
   }
 
-  .headImg-back {
+  .Backabout {
+    background: $bg-img-home;
 
+  }
+
+  .headImg-back {
+    height: 25vh;
     width: 100%;
     background-position: center;
     background-size: cover;

@@ -1,10 +1,10 @@
 import React from "react";
-const KasaLocation = () => {
+const Location = () => {
 
 
   return (
     <div>
-      Hello
+      c'est la page des offres de locations
     </div>
   );
 };
