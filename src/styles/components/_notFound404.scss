@@ -11,13 +11,13 @@
     color: $color-1;
     @include verticalCenter;
     flex-direction: column;
-    margin: 4% auto 2% auto;
+
 
 
     h3 {
 
       font-size: 20em;
-      font-weight: 700;
+
 
 
     }
@@ -26,8 +26,7 @@
 
       font-size: 3em;
       font-weight: 500;
-      line-height: 51px;
-      text-align: center;
+
 
 
     }
@@ -35,8 +34,7 @@
     .homeLink {
       font-size: 1em;
       font-weight: 500;
-      line-height: 20px;
-      margin: 8% auto;
+
 
 
     }
