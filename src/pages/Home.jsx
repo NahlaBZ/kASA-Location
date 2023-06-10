@@ -8,7 +8,6 @@ const Home = () => {
     <div>
       <Banner title="Chez vous, partout et ailleurs" class="backhome" />
 
-
     </div>
   );
 };
