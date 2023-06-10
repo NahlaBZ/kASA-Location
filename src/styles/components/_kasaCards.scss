@@ -1,0 +1,73 @@
+.Cards-content {
+    margin: 4% auto;
+    padding: 1%;
+    max-width: 1600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    border-radius: 20px;
+
+    .Cards-link {
+        align-items: center;
+        margin: 2%;
+        overflow: hidden;
+    }
+
+    .Cards {
+        position: relative;
+        flex: 1 0 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        background: center/cover;
+        border-radius: 10px;
+        min-width: 340px;
+        min-height: 340px;
+        width: 100%;
+        height: 100%;
+        max-width: 440px;
+        overflow: hidden;
+
+
+
+        img {
+            flex: 1 0 25%;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        h2 {
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            font-size: 18px;
+            line-height: 25px;
+            color: $white;
+            margin: 0 0 5% 5%;
+            max-width: 65%;
+            word-wrap: break-word;
+            text-shadow: 1px 1px #000;
+        }
+
+        .Wrap {
+            position: absolute;
+            background: $color-Gradient;
+            opacity: 0.3;
+            height: 100%;
+            width: 100%;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .Wrap:hover {
+            opacity: 0;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

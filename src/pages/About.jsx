@@ -6,10 +6,6 @@ import aboutData from "../Data/about.json";
 
 function About() {
 
-  // Set page title
-  const title = document.querySelector('title')
-  title.textContent = 'Kasa - A Propos'
-
   return (
     <>
       <Banner class="Backabout" />
