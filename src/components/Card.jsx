@@ -17,7 +17,7 @@ const Card = ({ home }) => {
       <div className="Cards">
         <img src={home.cover} alt={home.title} />
         <h2>{home.title}</h2>
-        <div className="Wrap"></div>
+
       </div>
     </NavLink>
   );
