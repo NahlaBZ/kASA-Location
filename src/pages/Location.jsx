@@ -3,23 +3,23 @@ import Carroussel from "../components/Loc/Carrousel";
 import logement from "../Data/logement.json";
 import Collapse from "../components/Collapse";
 import Tag from "../components/tag";
-
+import Ratings from "../components/rating";
 
 function Location() {
 
   let id = useParams()
 
-  let checkedRental = logement.find(search => search.id === id.id)
+  let check = logement.find(search => search.id === id.id)
 
 
 
-  let pictures = checkedRental.pictures.map((pics, index) => {
+  let pictures = check.pictures.map((pics, index) => {
     return (
       <img key={index} className="image" src={pics} alt="habitation" />
     )
   })
 
-  let tags = checkedRental.tags.map((tag, index) => (
+  let tags = check.tags.map((tag, index) => (
     <Tag key={`${index}`} tag={`${tag}`} />
   ))
 
@@ -29,25 +29,27 @@ function Location() {
 
       <section className="rentalIdentity" >
         <div className="place" >
-          <p className="rentalTitle" >{checkedRental.title}</p>
-          <p className="rentalPlace" >{checkedRental.location}</p>
+          <p className="rentalTitle" >{check.title}</p>
+          <p className="rentalPlace" >{check.location}</p>
           <div className="tagWrapper">
             {tags}
           </div>
         </div>
         <div className="hostAndRate" >
           <div className="host" >
-            <p className="renterName" >{checkedRental.host.name}</p>
-            <img className="renterPicture" src={checkedRental.host.picture} alt="Profil du loueur" />
+            <p className="renterName" >{check.host.name}</p>
+            <img className="renterPicture" src={check.host.picture} alt="Profil du loueur" />
           </div>
-
+          <div className="rates">
+            <Ratings rate={check.rating} />
+          </div>
         </div>
       </section>
 
-      <div className="collapse-container">
-        <Collapse title="Description">{checkedRental.description}</Collapse>
+      <div className="collapse-Ccontent">
+        <Collapse title="Description">{check.description}</Collapse>
         <Collapse title="Équipements">
-          {checkedRental.equipments.map((equipment) => (
+          {check.equipments.map((equipment) => (
             <p key={equipment}>
               {equipment}
               <br />

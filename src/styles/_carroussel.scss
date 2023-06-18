@@ -53,3 +53,34 @@
     background-color: transparent;
     border: none;
 }
+
+@media all and (max-width : 549px) {
+
+    .carrousselWrapper {
+        min-width: 335px;
+        height: 255px;
+        border-radius: 10px;
+        margin-top: 27px;
+        margin-bottom: 15px;
+    }
+
+    .buttonWrapper p {
+        display: none;
+    }
+
+    .image {
+        min-width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .arrow {
+        width: 12px;
+        height: 20px;
+    }
+
+    .buttonWrapper {
+        max-width: 549px;
+        min-width: 335px;
+    }
+}
