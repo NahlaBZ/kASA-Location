@@ -4,6 +4,7 @@ import logement from "../Data/logement.json";
 import Collapse from "../components/Collapse";
 import Tag from "../components/tag";
 import Ratings from "../components/rating";
+import Page404 from "../pages/Page404";
 
 function Location() {
 
@@ -12,6 +13,11 @@ function Location() {
   let check = logement.find(search => search.id === id.id)
 
 
+
+  // Vérifier si id existe ou pas
+  if (!check) {
+    return <Page404 />;
+  }
 
   let pictures = check.pictures.map((pics, index) => {
     return (

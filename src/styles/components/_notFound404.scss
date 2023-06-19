@@ -11,32 +11,56 @@
     color: $color-1;
     @include verticalCenter;
     flex-direction: column;
+    margin: 4% auto 2% auto;
 
+    @media screen and (max-width: 1800px) {
+      margin: 4% 10% 2% 10%;
 
+      @media screen and (max-width: 800px) {
+        margin-top: 20%;
+      }
+
+      @media screen and (max-width: 500px) {
+        margin-top: 30%;
+      }
+    }
 
     h3 {
-
+      //font-size: 288px;
       font-size: 20em;
+      font-weight: 700;
 
+      @media screen and (max-width: 800px) {
+        font-size: 10em;
+      }
 
-
+      @media screen and (max-width: 450px) {
+        font-size: 7em;
+      }
     }
 
     span {
-
+      //font-size: 36px;
       font-size: 3em;
       font-weight: 500;
+      line-height: 51px;
+      text-align: center;
 
-
-
+      @media screen and (max-width: 800px) {
+        font-size: 1.5em;
+      }
     }
 
     .homeLink {
       font-size: 1em;
       font-weight: 500;
+      line-height: 20px;
+      margin: 8% auto;
 
-
-
+      @media screen and (max-width: 500px) {
+        margin-top: 50%;
+        font-size: 0.8em;
+      }
     }
   }
 }
