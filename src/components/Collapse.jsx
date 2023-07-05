@@ -10,6 +10,7 @@ function Collapse(props) {
   };
 
   return (
+
     <div className="collapse">
       <div className="collapse-title" onClick={togleCollapse}>
         <h3>{props.title}</h3>
@@ -21,6 +22,7 @@ function Collapse(props) {
       </div>
       {isCollapsed && <div className="collapse-content">{props.children}</div>}
     </div>
+
   );
 }
 
