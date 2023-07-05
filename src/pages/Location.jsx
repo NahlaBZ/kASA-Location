@@ -30,7 +30,7 @@ function Location() {
   ))
 
   return (
-    <>
+    <div>
       <Carroussel image={pictures} />
 
       <section className="rentalIdentity" >
@@ -52,7 +52,7 @@ function Location() {
         </div>
       </section>
 
-      <div className="collapse-Ccontent">
+      <div className="collapse-container">
         <Collapse title="Description">{check.description}</Collapse>
         <Collapse title="Équipements">
           {check.equipments.map((equipment) => (
@@ -63,11 +63,12 @@ function Location() {
           ))}
         </Collapse>
       </div>
+    </div>
 
 
-    </>
-  )
-}
+
+  );
+};
 
 
 

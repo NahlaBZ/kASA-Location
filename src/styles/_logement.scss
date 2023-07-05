@@ -5,11 +5,49 @@ aside {
     width: 100%;
 }
 
+.collapse-container {
+    margin: 0 auto 4% auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+
+    @media screen and (max-width: 1800px) {
+        margin: 4% 10%;
+    }
+
+    @media screen and (max-width: 800px) {
+        display: block;
+    }
+
+    .collapse {
+        width: 48%;
+        margin: 0;
+
+        @media screen and (max-width: 800px) {
+            width: 100%;
+            margin-bottom: 10%;
+        }
+
+        .collapseKasalocationContent {
+            h3 {
+                font-size: 18px;
+            }
+        }
+
+        .collapse-content {
+            font-size: 18px;
+            min-height: 250px;
+        }
+    }
+}
+
 .rentalIdentity {
     display: flex;
     justify-content: space-between;
     width: 100%;
     color: #ff6060;
+
+
 }
 
 .place {
@@ -105,5 +143,41 @@ aside {
     .renterName {
         width: 50px;
         font-size: 12px;
+    }
+
+    .collapse-container {
+        margin: 0 auto 4% auto;
+        display: flex;
+        justify-content: space-between;
+        max-width: 1600px;
+
+        @media screen and (max-width: 1800px) {
+            margin: 4% 10%;
+        }
+
+        @media screen and (max-width: 800px) {
+            display: block;
+        }
+
+        .collapse {
+            width: 48%;
+            margin: 0;
+
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                margin-bottom: 10%;
+            }
+
+            .collapseKasalocationContent {
+                h3 {
+                    font-size: 18px;
+                }
+            }
+
+            .collapse-content {
+                font-size: 18px;
+                min-height: 250px;
+            }
+        }
     }
 }
